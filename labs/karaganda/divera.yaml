@@ -1,0 +1,11 @@
+name: DiVera
+city: karaganda
+url: https://divera.kz/ru/service/price-list
+currency: KZT
+parser: html-table
+# Embedded Google Sheets export. Border=1 table. 2 cols: Номенклатура / Цена.
+# Rows without a price are category headers.
+name_column: 0
+price_column: 1
+encoding: utf-8
+notes: "Public price list. Google Sheets embed. Category rows have empty price column."

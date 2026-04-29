@@ -1,0 +1,10 @@
+name: ИНВИТРО Казахстан (Karaganda)
+city: karaganda
+url: https://invitro.kz/analizes/for-doctors/karaganda/
+currency: KZT
+parser: html-table
+name_column: 1
+price_column: 3
+number_column: 0
+encoding: utf-8
+notes: "Public price list. Rows have test number, name, category, price."

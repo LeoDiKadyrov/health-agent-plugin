@@ -1,0 +1,10 @@
+name: КДЛ ОЛИМП
+city: karaganda
+url: https://kdlolymp.kz/pricelist/karaganda
+currency: KZT
+parser: html-table
+# HTML structure: table rows, name in col 0, price in col 2
+name_column: 0
+price_column: 2
+encoding: utf-8
+notes: "Public price list. No auth required. Prices update occasionally."

@@ -1,0 +1,10 @@
+name: Диацент
+city: karaganda
+url: https://diacent.kz/price
+currency: KZT
+parser: html-table
+html_class: "views-table cols-4"
+name_column: 0
+price_column: 3
+encoding: utf-8
+notes: "Public price list. Table class: views-table cols-4. Cols: name, category, note, price."

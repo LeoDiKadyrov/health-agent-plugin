@@ -1,0 +1,30 @@
+# Template for adding a new lab to health-agent-plugin.
+# 1. Copy this file to labs/<your-city>/<lab-name>.yaml
+# 2. Fill in all required fields
+# 3. Submit a PR
+
+name: Lab Name (required)
+city: city-name-lowercase (required)
+url: https://... (required — public price list URL, no auth)
+currency: KZT  # or USD, RUB, etc.
+
+# Parser type: html-table | html-list | json-api
+parser: html-table
+
+# For html-table: 0-indexed column positions
+name_column: 0
+price_column: 1
+
+# Optional: CSS class to find the right table if page has multiple
+html_class: null
+
+# Optional: which HTTP encoding to use
+encoding: utf-8
+
+notes: "Any notes about the price page structure, update frequency, quirks."
+
+# Legal
+# By contributing a lab config you confirm:
+# - The price list URL is publicly accessible without authentication
+# - You have checked robots.txt for this domain
+# - Scraping is done at low frequency (once per session, not automated)

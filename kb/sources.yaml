@@ -1,0 +1,27 @@
+# Live sources for --live flag in /compare-benchmark
+# Agent fetches these URLs when user explicitly requests current guidelines.
+# Result is cached per session.
+
+blueprint:
+  primary: https://blueprint.bryanjohnson.com/protocol
+  supplementary:
+    - https://protocol.bryanjohnson.com/blueprint-protocol-guide.pdf
+
+attia:
+  primary: https://peterattiamd.com/category/understanding-science/
+  supplementary:
+    - https://peterattiamd.com/peter-on-blood-work-what-to-get-and-what-it-means/
+
+aha_life8:
+  primary: https://www.heart.org/en/healthy-living/healthy-lifestyle/lifes-essential-8
+
+sinclair:
+  primary: https://lifespanbook.com
+  supplementary:
+    - https://sinclair.hms.harvard.edu/publications
+
+pubmed_longevity:
+  - https://pubmed.ncbi.nlm.nih.gov/?term=longevity+biomarkers+review&sort=date&filter=dates.2022-2025
+
+who_lipids:
+  primary: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)
