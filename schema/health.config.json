@@ -1,0 +1,14 @@
+{
+  "_comment": "Copy this file to your project root as health.config.json and fill in your paths. Run /onboard to set it up interactively.",
+  "data": {
+    "tests": "medical_tests/",
+    "reports": "medical_reports/",
+    "training": null
+  },
+  "benchmarks": ["blueprint", "attia", "aha_life8"],
+  "profile": {
+    "dob": "YYYY-MM-DD",
+    "sex": "male"
+  },
+  "lab_prices": null
+}
