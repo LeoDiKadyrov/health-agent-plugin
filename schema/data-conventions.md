@@ -66,9 +66,9 @@ priority_markers: [ApoB, LDL-C, HbA1c, hs-CRP, Omega-3 Index]
 
 Followed by a Markdown table:
 
-| Маркер | Единицы | Цель | Приоритет | Группа |
+| Маркер | Единицы | Цель | Приоритет | Примечание |
 |-|-|-|-|-|
-| ApoB | мг/дл | <60 | high | Липиды |
+| ApoB | мг/дл | <60 | high | Лучше LDL как предиктор |
 
 Priority values: `high` | `medium` | `low`
 
