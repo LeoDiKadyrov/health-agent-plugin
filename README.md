@@ -5,7 +5,7 @@ Open-source Claude Code plugin for AI-agent health analytics. Compares your lab 
 ## Install
 
 ```bash
-claude plugin install gh:yourusername/health-agent-plugin
+claude plugin install gh:LeoDiKadyrov/health-agent-plugin
 ```
 
 ## Quickstart
