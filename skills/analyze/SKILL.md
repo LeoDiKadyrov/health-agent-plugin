@@ -8,6 +8,8 @@ disable-model-invocation: true
 
 Read `health.config.json` from the project root. If it doesn't exist, tell the user to run `/onboard` first and stop.
 
+Also read `schema/data-conventions.md` from the plugin root (same directory as `kb/`) for data format reference — needed before parsing training CSV.
+
 Read the following files:
 1. All Markdown files in `data.tests` directory (lab results)
 2. All Markdown files in `data.reports` directory (if path configured)
@@ -67,7 +69,7 @@ Identify patterns that intersect with biomarker findings:
 
 One paragraph per intersection found. Concrete and specific (not generic).
 
-If the training CSV has a notes column with pain/injury mentions — flag them in this section even if not directly related to biomarkers.
+If the training CSV `notes` column contains pain/injury keywords (pain, sick, tired, skip, jitsu, allergy, trip) — flag them in this section.
 
 ### 5. Итоговая оценка
 
@@ -77,6 +79,7 @@ State which protocols were used for comparison.
 ## Rules
 
 - ApoB takes priority over LDL-C. If ApoB is present, do not separately flag LDL-C.
-- For markers present in multiple protocols with different targets: show the strictest target and note which protocol it comes from.
+- For markers present in multiple protocols with different targets: show the marker once with the strictest target, and note the source protocol in parentheses. Example: `| ApoB | 72 | мг/дл | <60 (Blueprint) | ⚠ |`
 - Use latest value per marker across all test files.
-- If training CSV has a notes column with pain/injury mentions — flag them in cross-analysis even if not directly related to biomarkers.
+- Training CSV required columns for cross-analysis: `date`, `day_type`, `exercise`, `set_1`–`set_4`, `notes`. If a column is absent, skip that analysis point silently. Do not error — partial data is valid.
+- If training CSV notes column contains pain/injury keywords (pain, sick, tired, skip, jitsu, allergy, trip) — flag them in cross-analysis.
