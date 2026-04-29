@@ -1,0 +1,11 @@
+name: health-agent
+version: 1.0.0
+description: AI-agent health analytics against international longevity benchmarks. Compares your labs, reports, and training data against Blueprint, Medicine 3.0, AHA Life's Essential 8, and Sinclair protocols.
+author: community
+homepage: https://github.com/yourusername/health-agent-plugin
+skills:
+  - onboard
+  - analyze
+  - compare-benchmark
+  - add-result
+  - plan-panel
