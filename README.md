@@ -34,6 +34,7 @@ Full health analysis against all configured protocols.
 | `/add-result` | Add new lab result or doctor consultation note |
 | `/plan-panel` | Identify missing panels + live lab price comparison |
 
+https://boosty.to/leodikadyrov
 ## Data Format
 
 Your health data goes in directories you specify during `/onboard`. See `schema/data-conventions.md` for the expected Markdown and CSV formats.
